@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Brain Explorer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="info-panel">
+        <h2 id="region-name">Select a brain region</h2>
+        <p id="region-description">Click on any colored region to learn about its function</p>
+        <div id="normal-function-container">
+            <h3>Normal Function:</h3>
+            <p id="normal-function"></p>
+        </div>
+        <div id="damage-effects">
+            <h3>Effects of Damage:</h3>
+            <ul id="damage-effects-list"></ul>
+        </div>
+        <button id="simulate-damage">Simulate Damage</button>
+    </div>
+    <div id="scene-container"></div>
+
+    <!-- Three.js and other dependencies -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/examples/js/loaders/GLTFLoader.js"></script>
+    
+    <!-- Our scripts -->
+    <script src="brain-regions.js"></script>
+    <script src="main.js"></script>
+</body>
+</html> 
