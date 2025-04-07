@@ -2,19 +2,31 @@
     "version": 2,
     "builds": [
         {
-            "src": "*.html",
+            "src": "**/*.js",
             "use": "@vercel/static"
         },
         {
-            "src": "*.js",
+            "src": "**/*.html",
             "use": "@vercel/static"
         },
         {
-            "src": "*.css",
+            "src": "**/*.css",
             "use": "@vercel/static"
         }
     ],
     "routes": [
+        {
+            "src": "/brain-regions.js",
+            "dest": "/brain-regions.js"
+        },
+        {
+            "src": "/main.js",
+            "dest": "/main.js"
+        },
+        {
+            "src": "/style.css",
+            "dest": "/style.css"
+        },
         {
             "src": "/(.*)",
             "dest": "/index.html"
